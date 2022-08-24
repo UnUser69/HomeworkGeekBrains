@@ -1,5 +1,5 @@
 ﻿/*
-// Write a program that takes two numbers as input and outputs which number is greater and which is less. //
+// Write a program that takes two numbers as input and outputs which number is maximum and which is minimum. //
 // Input of variables. //
 int num;
 int num2;
@@ -27,6 +27,7 @@ Console.WriteLine(minNumber);
 */
 
 /*
+// Write a program that takes three numbers as input and outputs the maximum of these numbers. //
 // Input of variables. //
 int num1;
 int num2;
@@ -53,3 +54,21 @@ Console.Write("The maximum number is the number: ");
 Console.WriteLine(SecondMaxNumber);
 
 */
+
+
+// Write a program that takes a number as input and outputs whether the number is even (whether it is divisible by two without a remainder). //
+// Input of variables. //
+int num;
+// Console displays a message. //
+Console.Write("Enter the number: ");
+// The variable "num" is assigned a value. //
+num = Convert.ToInt32(Console.ReadLine());
+// The program creates a branch to check the odd parity of the variable "num" and prints the result to the screen. //
+if(num%2==0)
+{
+    Console.Write("The number is even.");
+}
+else
+{
+    Console.Write("The number is odd.");
+}
