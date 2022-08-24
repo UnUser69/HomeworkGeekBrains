@@ -26,8 +26,24 @@ Console.WriteLine(minNumber);
 
 */
 
-/*
+int num1;
+int num2;
+int num3;
 
+Console.Write("Enter the first number: ");
+num1 = Convert.ToInt32(Console.ReadLine());
 
+Console.Write("Enter the second number: ");
+num2 = Convert.ToInt32(Console.ReadLine());
 
-*/
+Console.Write("Enter the third number: ");
+num3 = Convert.ToInt32(Console.ReadLine());
+
+// The variable "maxNumber" is entered with the function "Math.Max". //
+int MaxNumber = Math.Max(num1, num2);
+int SecondMaxNumber = Math.Max(MaxNumber, num3);
+
+Console.Write("The maximum number is the number: ");
+// Console displays a message. //
+Console.WriteLine(SecondMaxNumber);
+
