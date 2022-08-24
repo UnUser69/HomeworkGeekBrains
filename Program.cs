@@ -55,9 +55,9 @@ Console.WriteLine(SecondMaxNumber);
 
 */
 
-
+/*
 // Write a program that takes a number as input and outputs whether the number is even (whether it is divisible by two without a remainder). //
-// Input of variables. //
+// Input of variable. //
 int num;
 // Console displays a message. //
 Console.Write("Enter the number: ");
@@ -72,3 +72,22 @@ else
 {
     Console.Write("The number is odd.");
 }
+
+*/
+
+
+// Write a program that takes a number (N) as input and outputs all even numbers from 1 to N. //
+// Input of variable. //
+int num;
+int start = 0;
+// Console displays a message. //
+Console.Write("Enter the number: ");
+// The variable "num1" is assigned a value. //
+num = Convert.ToInt32(Console.ReadLine());
+// A loop is created in which the variable "start" is displayed and incremented by 1 until the variable "num" becomes equal to the variable "start". //
+while(start<num)
+{
+    start=start+1;
+    Console.Write(start + " ");
+}
+
