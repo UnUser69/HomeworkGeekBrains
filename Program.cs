@@ -1,4 +1,5 @@
 ﻿/*
+
 // Write a program that takes two numbers as input and outputs which number is maximum and which is minimum. //
 // Input of variables. //
 int num;
@@ -27,6 +28,7 @@ Console.WriteLine(minNumber);
 */
 
 /*
+
 // Write a program that takes three numbers as input and outputs the maximum of these numbers. //
 // Input of variables. //
 int num1;
@@ -56,6 +58,7 @@ Console.WriteLine(SecondMaxNumber);
 */
 
 /*
+
 // Write a program that takes a number as input and outputs whether the number is even (whether it is divisible by two without a remainder). //
 // Input of variable. //
 int num;
@@ -75,6 +78,7 @@ else
 
 */
 
+/*
 
 // Write a program that takes a number (N) as input and outputs all even numbers from 1 to N. //
 // Input of variable. //
@@ -91,3 +95,4 @@ while(start<num)
     Console.Write(start + " ");
 }
 
+*/
