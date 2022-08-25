@@ -78,21 +78,28 @@ else
 
 */
 
-/*
+
 
 // Write a program that takes a number (N) as input and outputs all even numbers from 1 to N. //
 // Input of variable. //
 int num;
-int start = 0;
+int start = 1;
 // Console displays a message. //
 Console.Write("Enter the number: ");
 // The variable "num1" is assigned a value. //
 num = Convert.ToInt32(Console.ReadLine());
-// A loop is created in which the variable "start" is displayed and incremented by 1 until the variable "num" becomes equal to the variable "start". //
-while(start<num)
+// The program starts a loop that checks the variable "start" for parity and falsity, //
+// displays the result of the check depending on the answer on the screen until the variable "start" becomes equal to the variable "num". //
+while(start<=num)
 {
-    start=start+1;
-    Console.Write(start + " ");
+    if(start%2==0)
+    {
+        Console.Write(start + " ");
+        start=start+1;
+    }
+    else
+    {
+        start=start+1;
+    }
 }
 
-*/
