@@ -78,7 +78,7 @@ else
 
 */
 
-
+/*
 
 // Write a program that takes a number (N) as input and outputs all even numbers from 1 to N. //
 // Input of variable. //
@@ -102,4 +102,6 @@ while(start<=num)
         start=start+1;
     }
 }
+
+*/
 
