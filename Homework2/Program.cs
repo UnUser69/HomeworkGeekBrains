@@ -37,6 +37,8 @@ else {
 
 */
 
+/*
+
 //Write a program that displays the third digit of a given number, or reports that there is no third digit. //
 int ThreeDigit(){
     // Displays a message. //
@@ -78,3 +80,47 @@ else{
         Console.Write("The third digit of your number is: " + Desired + ".");
     }
 }
+
+*/
+
+// Created "Weekends" function. //
+void Weekends(){
+    // Displays a message. //
+    Console.Write("Enter the serial number of the day of the week: ");
+    // The variable "Day" is declared, which takes values ​​entered by the user. //
+    int Day = Convert.ToInt32(Console.ReadLine());
+        // Branching starts. //
+        if (Day==1)
+            // Displays a message. //
+            Console.Write("Monday is a working day.");
+        // Branch. //
+        else if(Day==2)
+            // Displays a message. //
+            Console.Write("Tuesday is a working day.");
+        // Branch. //
+        else if(Day==3)
+            // Displays a message. //
+            Console.Write("Wednesday is a working day.");
+        // Branch. //
+        else if(Day==4)
+            // Displays a message. //
+            Console.Write("Thursday is a working day.");
+        // Branch. //
+        else if(Day==5)
+            // Displays a message. //
+            Console.Write("Friday is a working day.");
+        // Branch. //
+        else if(Day==6)
+            // Displays a message. //
+            Console.Write("Saturday is a day off.");
+        // Branch. //
+        else if(Day==7)
+            // Displays a message. //
+            Console.Write("Sunday is a day off.");
+        // Branch. //
+        else
+            // Displays a message. //
+            Console.Write("There are seven days in a week!"); 
+    }
+// Function launch. //
+Weekends();
