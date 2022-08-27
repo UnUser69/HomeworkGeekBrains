@@ -83,6 +83,8 @@ else{
 
 */
 
+/*
+
 // Created "Weekends" function. //
 void Weekends(){
     // Displays a message. //
@@ -124,3 +126,6 @@ void Weekends(){
     }
 // Function launch. //
 Weekends();
+
+*/
+
