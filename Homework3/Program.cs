@@ -54,3 +54,21 @@ Console.WriteLine("The distance between points in 3D space is: " + Math.Round(Di
 
 */
 
+/*
+// Write a program that takes a number (N) as input and produces a table of cubes of numbers from 1 to N. //
+// Input variable "N". //
+int N = Convert.ToInt32(Console.ReadLine());
+// Input variable "i". //
+int i = 1;
+// Starts a loop to create a table of cubes from "1" to the entered number. //
+while (i<=N){
+    // Initialization and calculation of the cube of a number. //
+    int Cube=i*i*i;
+    //Displaying a message. //
+    Console.Write(Cube+ "; ");
+    // Cycle repetition. //
+    i++;
+}
+
+*/
+
