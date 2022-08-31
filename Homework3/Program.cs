@@ -27,4 +27,30 @@ string number = Convert.ToString(FiveDigitNumber);
 
 */
 
+/*
+// Write a program that takes the coordinates of two points as input and finds the distance between them in 3D space. //
+Console.Write("Enter the x coordinate of the first point: ");
+// Input variable "x1". //
+double x1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter the y coordinate of the first point: ");
+// Input variable "y1". //
+double y1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter the z coordinate of the first point: ");
+// Input variable "z1". //
+double z1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter the x coordinate of the second point: ");
+// Input variable "x2". //
+double x2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter the y coordinate of the second point: ");
+// Input variable "y2". //
+double y2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter the z coordinate of the second point: ");
+// Input variable "z2". //
+double z2 = Convert.ToDouble(Console.ReadLine());
+// Assigning to the variable "Distance" the value of the formula for finding the distance between two points in space: √((x2−x1)^2+(y2−y1)^2+(z2−z1)^2). //
+double Distance = Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2)+Math.Pow(z2-z1,2));
+// Displaying the message and solution on the screen and rounding it to hundredths. //
+Console.WriteLine("The distance between points in 3D space is: " + Math.Round(Distance,2) + ".");
+
+*/
 
