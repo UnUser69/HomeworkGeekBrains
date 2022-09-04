@@ -67,3 +67,36 @@ else {
 Console.WriteLine($"The answer is: {memory}.");
 
 */
+
+/*
+
+// Write a program that sets an array of arbitrary elements and displays them on the screen. //
+// Found array function "CreateRandomArray". //
+int [] CreateRandomArray(int size){
+    // Array initialization. //
+    int[] array = new int[size];
+    // Running a "for" loop to fill an array with random numbers. //
+    for(int i=0; i<size; i++){
+        // Random number generation. //
+        array[i] = new Random().Next(1,1001);
+    }
+    // Displaying the value of the "array" variable. //
+    return array;
+}
+// Input function "void". //
+void ShowArray(int[] array){
+    // Array filling loop. //
+    for(int i=0; i<array.Length; i++){
+        // Displaying an array on the screen. //
+        Console.Write(array[i]+" ");
+    }
+}
+// Displaying a message on the screen. //
+Console.Write("Ваш массив: ");
+// Initialization of the "size" function. //
+int size = Convert.ToInt32( new Random().Next(1,10001));
+// Running two function. //
+ShowArray(CreateRandomArray(size));
+
+*/
+
