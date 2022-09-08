@@ -60,3 +60,73 @@ int answer = Parity();
 Console.WriteLine($"Number of even numbers in array: {answer};");
 
 */
+
+/*
+
+// Specify a one-dimensional array filled with random numbers. Find the sum of elements in odd positions. //
+// Found array function "CreateRandomArray". //
+int [] CreateRandomArray(int size){
+    // Array initialization. //
+    int[] array = new int[size];
+    // Running a "for" loop to fill an array with random numbers. //
+    for(int i=0; i<size; i++){
+        // Random number generation. //
+        array[i] = new Random().Next(-1001,1001);
+    }
+    // Displaying the value of the "array" variable. //
+    return array;
+}
+// Input function "void". //
+void ShowArray(int[] array){
+    // Array filling loop. //
+    for(int i=0; i<array.Length; i++){
+        // Displaying an array on the screen. //
+        Console.Write(array[i]+" ");
+    }
+}
+// Displaying a message on the screen. //
+Console.Write("Your array: ");
+// Initialization of the "size" function. //
+int size = Convert.ToInt32( new Random().Next(1,51));
+// Declaring an array and assigning the values ​​of the "CreateRandomNumber" function to it. //
+int[] second_array=CreateRandomArray(size);
+// Function usage. //
+ShowArray(second_array);
+// Displaying a message on the screen. //
+Console.Write("; ");
+// Function creation //
+int SumOfOddElements(){
+// Variable initialization "i". //
+int i=0;
+// Variable initialization "sum". //
+int sum = 0;
+// Launching a loop to find the sum of elements in odd positions. //
+while(i<second_array.Length){    
+    // Loop condition. //
+    if (i==0){
+        // Increment counter "i". //
+        i = i+1;
+    }
+    // Loop condition. //
+    else{
+        if(i%2==0){
+            // Increment counter "i". //
+            i = i+1; 
+        }
+        else{
+            // Increment counter "sum". //
+            sum += second_array[i];
+            // Increment counter "i". //
+            i = i+1;
+        }
+    }
+}
+// Displaying the value of the variable "sum". //
+return sum;
+};
+// Initializing the "answer" variable and assigning it the value of the "SumOfOddElements" function. //
+int answer = SumOfOddElements();
+// Displaying a message on the screen. //
+Console.WriteLine($"The sum of elements in odd positions is equal to: {answer};");
+
+*/
