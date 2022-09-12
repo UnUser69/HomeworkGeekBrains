@@ -37,3 +37,56 @@ for (int i = 0; i < array.Length; i++){
 Console.WriteLine($"Number of elements > 0: {count}");
 
 */
+
+/*
+
+// Write a program that will find the point of intersection of two lines given by the equations y = k1 * x + b1, y = k2 * x + b2; the values ​​b1, k1, b2 and k2 are set by the user. //
+
+// Function initialization "FindThePoint". //
+void FindThePoint(){
+    // A message is displayed on the screen. //
+    Console.WriteLine($"I find the point of intersection of two lines given by the equations y = k1 * x + b1, y = k2 * x + b2.");
+    // A message is displayed on the screen. //
+    Console.Write($"Enter the value of the variable 'b1':");
+    // The variable "b1" is assigned the value entered by the user. //
+    float b1 = Convert.ToInt32(Console.ReadLine());
+    // A message is displayed on the screen. //
+    Console.Write($"Enter the value of the variable 'k1':");
+    // The variable "k1" is assigned the value entered by the user. //
+    float k1 = Convert.ToInt32(Console.ReadLine());
+    // A message is displayed on the screen. //
+    Console.Write($"Enter the value of the variable 'b2':");
+    // The variable "b2" is assigned the value entered by the user. //
+    float b2 = Convert.ToInt32(Console.ReadLine());
+    // A message is displayed on the screen. //
+    Console.Write($"Enter the value of the variable 'k2':");
+    // The variable "k2" is assigned the value entered by the user. //
+    float k2 = Convert.ToInt32(Console.ReadLine());
+        // Starting a branch. //
+        if(b1 == b2 && k1 ==k2){
+            // A message is displayed on the screen. //
+            Console.WriteLine($"Direct match.");
+        }
+        // Branch condition. //
+        else{
+            // Branch condition. //
+            if(k1 == k2){
+            // A message is displayed on the screen. //
+            Console.WriteLine($"Straight lines are parallel.");
+            }
+            // Branch condition. //
+            else{
+            // Initializing and finding the value of the variable "x". //
+            float x = (b2 - b1) / (k1 - k2);
+            // Initializing and finding the value of the variable "y". //
+            float y = k1 * x + b1;
+            // A message is displayed on the screen. //
+            Console.WriteLine($"Point of intersection of two coordinates: ({x}; {y}).");
+            }
+    }
+}
+// Function launch. //
+FindThePoint();
+
+*/
+
