@@ -1,50 +1,51 @@
 ﻿/*
 
 // Specify a two-dimensional m×n array filled with random real numbers. //
-
+// Displaying a message on the screen. //
 Console.Write("Specify Number of Rows of Two-Dimensional Array: ");
-
+// Variable "m" initialization. //
 int m = Convert.ToInt32(Console.ReadLine());
-
+// Displaying a message on the screen. //
 Console.Write("Specify Number of Columns of Two-Dimensional Array:");
-
+// Variable "n" initialization. //
 int n = Convert.ToInt32(Console.ReadLine());
-
-double[,] twoDimArray = new double[m, n];
-
+// Array initialization. //
+double[,] TwoDimensionalArray = new double[m, n];
+// Assigning the variable "rnd" the value of the function "new Random()". //
 Random rnd = new Random();
-
-void PrintArray(double[,] matr){ 
-    
+// Initializing an Array Output Function. //
+void PrintArray(double[,] array){ 
+    // Start cycle "for". //
     for (int i = 0; i < m; i++){ 
-        
+        // Running an additional "for" loop. //
         for (int j = 0; j < n; j++){ 
-            
-        Console.Write($"{matr[i, j]} ");}
-        
+        // Array string output. //   
+        Console.Write($"{array[i, j]} ");}
+    // Line break. //     
     Console.WriteLine();}
 }
-
-void FillArray(double[,] matr){ 
-    
+// Initializing functions to fill an array with random numbers. //
+void FillArray(double[,] array){ 
+    // Start cycle "for". //
     for (int i = 0; i < m; i++){ 
-        
+        // Running an additional "for" loop. //
         for (int j = 0; j < n; j++){ 
-            
-        matr[i,j] = Convert.ToDouble(rnd.Next(-100, 100)/10.0);}
+        // Filling array "array". //    
+        array[i,j] = Convert.ToDouble(rnd.Next(-100, 100)/10.0);}
     }
 }
-
-FillArray(twoDimArray);
-
+// Running the "FillArray" Function. //
+FillArray(TwoDimensionalArray);
+// Line break. //
 Console.WriteLine();
-
-PrintArray(twoDimArray);
+// Running the "PrintArray" Function. //
+PrintArray(TwoDimensionalArray);
 
 */
 
+/*
 
-
+// Write a program that takes the position of an element in a two-dimensional array as input, and returns the value of this element or an indication that there is no such element. //
 // Displaying a message on the screen. //
 Console.Write("Enter the height of the array: ");
 // Initialization of the "m" variable to indicate the height of the array. //
@@ -71,26 +72,28 @@ for (int i = 0; i < m; i++) {
         // Array line wrap. //
         Console.WriteLine();
 }
- 
- Console.WriteLine("Введите координаты");
-
+// Displaying a message on the screen. //
+ Console.WriteLine("Enter the x coordinate of the point: ");
+// Variable initialization "a". //
  int a = Convert.ToInt32(Console.ReadLine());
-
+// Displaying a message on the screen. //
+ Console.WriteLine("Enter the y coordinate of the point: ");
+// Variable initialization "b". //
  int b = Convert.ToInt32(Console.ReadLine());
+// Branch initialization. //
+if (a>m || b>n){
+    // Displaying a message on the screen. //
+    Console.WriteLine("такого числа нет");
+}
+// Branch condition. //
+else {
+    // Finding an object. //
+    object c = array.GetValue(a,b);
+    // Line wrapping. //
+    Console.WriteLine(c);
+}
 
- if (a>m || b>n)
-
- Console.WriteLine("такого числа нет");
-
- else
- {
-
- object c = array.GetValue(a,b);
-
- Console.WriteLine(c);
- }
-
-
+*/
 
 /*
 
